@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TheNS Home Page",
-  description: "This is a Home Page of the TheNS application",
+  title: "TheNS API Request Box",
+  description: "TheNS API Request Box application page. It is used to inspect and compare API requests. This helps API debuggers, testers, developers to check if the API request is correct when sending to the API endpoint.",
 };
 
-export default function RootLayout({
+export default function APIRequestBoxLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
